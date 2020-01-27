@@ -1,0 +1,6 @@
+2020-01-14 12:16:44,751 - xapi-batch-delete - INFO - Starting xapi-batch-delete-testing: cwtest
+2020-01-14 12:16:44,951 - xapi-batch-delete - INFO - Log to LA-Config: starting-inst, cwtest, , 
+2020-01-14 12:16:44,951 - xapi-batch-delete - INFO - Log response - Status: 200, Response: OK
+2020-01-14 12:16:45,218 - xapi-batch-delete - INFO - Log to LA-Config: finished-inst, cwtest, success, 
+2020-01-14 12:16:45,219 - xapi-batch-delete - INFO - Log response - Status: 200, Response: OK
+2020-01-14 12:16:45,219 - xapi-batch-delete - INFO - finished-inst: success
