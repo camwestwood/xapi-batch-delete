@@ -85,8 +85,15 @@ def xapi_batch_delete(deletions, xapi_headers):
         response = requests.get(request_verify, headers=xapi_headers)
 
         if response.ok:
-            message = json.dumps(response.text)
-            logger.info(message)
+            message = json.loads(response.text)
+            if message:
+                message = message['edges']
+                for item in message:
+                    batch_id = item['node']['_id']
+                    processing = item['node']['processing']
+                    done = item['node']['done']
+                logger.info(str((inst_shortname, batch_id, processing, done, count)))
+
             # show the user the ids and filters of the requests sent
     else:
         logger.info('No requests sent to LDH, check process.')
